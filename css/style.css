@@ -83,6 +83,9 @@ p {
   .a-header:hover {
     text-decoration: underline !important; }
 
+.p10 {
+  padding: 10px; }
+
 .liteDashed, .user_status {
   border-bottom: 1px dashed #999999;
   color: #999999;
@@ -311,7 +314,7 @@ p {
 /**
   * profile page
 */
-.profile-display, .profile-space, .profile-left, .profile-right, .profile-img-item, .profile-item-space {
+.profile-display, .profile-space, .profile-left, .profile-right, .profile-img-item, .profile-item-space, .profile-info-box .profile-info-label, .profile-info-box .profile-info-space, .profile-info-box .profile-info-content {
   display: inline-block;
   vertical-align: top; }
 
@@ -388,6 +391,59 @@ p {
   font-style: italic;
   text-align: left;
   margin-top: 5px; }
+
+.profile-user-index-info {
+  font-size: 18px;
+  padding-top: 10px;
+  font-weight: bold;
+  color: #333333; }
+
+.profile-info-box {
+  padding-left: 10px;
+  padding-bottom: 10px; }
+  .profile-info-box .profile-info-label {
+    width: 40%;
+    color: #999999; }
+  .profile-info-box .profile-info-space {
+    width: 3%; }
+  .profile-info-box .profile-info-content {
+    width: 57%; }
+
+.line {
+  height: 11px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cccccc; }
+
+.line-caption {
+  font-weight: bold;
+  background: white;
+  padding-right: 5px; }
+
+/**
+*
+* friends
+*/
+.search-place {
+  width: 100%; }
+
+.two-controls:first-child {
+  width: 20%;
+  display: inline-block;
+  float: right;
+  margin-top: 1px; }
+.two-controls:last-child {
+  width: 78%;
+  display: inline-block;
+  margin-right: auto; }
+
+.items-list.friends {
+  margin-top: 10px; }
+
+.items-list-caption {
+  margin-top: 10px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 2px;
+  font-size: 14px; }
 
 /**
   * tags cloud
