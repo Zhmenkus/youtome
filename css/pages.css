@@ -7,14 +7,26 @@
 
     3 - Content
     3.1 - Dialogues
+    3.2 - My Dialog
 
     4 - Footer
 
     5 - Widgets / Shortcodes / Components
-
     6 - Helper Classes
 
  * -------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------
+ * 1 - General
+ * -------------------------------------------------------------------------- */
+
+.site-block{
+    border: 1px solid #ccc;
+}
+.navigation-menu{
+    line-height: 7px;
+    font-size: 14px;
+}
 
 /* --------------------------------------------------------------------------
  * 3 - Content
@@ -24,24 +36,22 @@
 /* ========================================================================== */
 
 .dialogue-count{
-    border-bottom:solid 1px #ccc;
+    margin: -8px 0;
     color: #666;
+    font-size: 14px;
 }
 .dialogue-item{
     overflow: hidden;
-    float: left;
     width: 100%;
     height: 104px;
-    margin-bottom: 12px;
+    margin-top: 12px;
+    padding: 12px;
     font: normal 14px Calibri;
     background: #eef4f6;
-    padding: 12px;
     box-sizing: border-box;
-    -moz-box-sizing: border-box; /*Firefox 1-3*/
-    -webkit-box-sizing: border-box; /* Safari */
 }
 .dialogue-item.active{
-    background: #181818;
+    background: #111;
 }
 .dialogue-user-avatar{
     float:left;
@@ -53,9 +63,11 @@
     display: block;
     margin-top: -5px;
     font-size: 16px;
+    font-weight: bold;
 }
 .dialogue-item .dialogue-user-name{
     color: #0963ab;
+
 }
 .dialogue-message{
     overflow: hidden;
@@ -77,4 +89,67 @@
 }
 .dialogue-time{
     color:#999
+}
+
+/* 3.2 - My Dialog
+/* ========================================================================== */
+
+.my-dialog-items{
+    overflow-x: hidden;
+    width: 100%;
+    height: 404px;
+    border:solid 1px #ccc;
+    border-bottom: none;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.my-dialog-item{
+    float: left;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 14px ;
+}
+.my-dialog-user-avatar{
+    float:left;
+    width: 80px;
+    height:80px;
+    margin-right: 10px;
+}
+.my-dialog-user-name{
+    min-height: 20px;
+    display: block;
+    margin-top: -5px;
+    font: bold 16px Calibri;
+}
+.my-dialog-item .my-dialog-user-name{
+    color:#0963ab;
+}
+
+.my-dialog-message{
+    min-height:35px;
+    margin:5px 0 10px;
+    font-size:14px;
+    color:#333;
+}
+.my-dialog-time{
+    color:#999;
+}
+.my-dialog-write-message{
+    height:70px;
+    width: 100%;
+    padding:10px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    outline:none ;
+    resize: none;
+}
+.my-dialog-write-message::-webkit-input-placeholder{
+    font:italic 14px Calibri;
+}
+.my-dialog-write-message::-moz-placeholder{
+    font:italic 14px Calibri;
+}
+.my-dialog-message-send{
+    margin-left:0 ;
 }
